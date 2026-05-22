@@ -93,7 +93,7 @@ def save_model(model, path):
     # -----------------------------
     # TODO: implement the function | DONE
     # -----------------------------
-    with open(f'{path}.pkl', 'wb') as f:
+    with open(f'{path}', 'wb') as f:
         pickle.dump(model, f)
 
 def load_model(path):
@@ -101,7 +101,7 @@ def load_model(path):
     # -----------------------------
     # TODO: implement the function | DONE
     # -----------------------------
-    with open(f'{path}.pkl', 'rb') as f:
+    with open(f'{path}', 'rb') as f:
         model = pickle.load(f)
     return model
 
